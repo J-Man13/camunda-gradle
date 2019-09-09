@@ -1,0 +1,19 @@
+camunda.bpm:
+  admin-user:
+    id: admin
+    password: admin
+    firstName: Administrator
+  filter:
+    create: 'All tasks'
+spring:
+  datasource:
+    jdbcUrl: 'jdbc:h2:mem:camunda;DB_CLOSE_DELAY=-1'
+    username: sa
+    password: null
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+  jersey:
+    application-path: camunda-api
+
